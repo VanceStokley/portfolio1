@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.header{
+    width:100;
+    height: 100vh;
+    background-image: linear-gradient(rgba(5,0,136,0.5), rgba(5,0,136,0.5)), url(images/cssback.png);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    transition: background .5s;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: orange;
+}
+nav .logo img{
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+nav ul li{
+    
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+
+}
+nav:hover{
+    background: #fff;
+}
+nav:hover ul li a{
+    color: #333;
+}
+.info1{
+  margin-top: 9%;
+  margin-left: 9%;
+  color: #fff;  
+}
+.info1 h1{
+    font-size: 120px;
+    line-height: 140px;
+    font-weight: 600;
+}
+.info1 p{
+    font-size: 35px;
+    max-width: 500 ;
+    line-height: 28px;
+    opacity: 0;
+}
+.directs {
+    margin-top: 30px;
+    margin-left: 9%;
+    opacity: 0;
+}
+.directs a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+.mam{
+ border: 2px solid white;
+ padding: 10px 35px;
+ border-radius: 30px;
+ margin-right: 15px;
+
+}
+.sleft{
+    animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft {
+    0%{
+        transform: translate(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px);
+        opacity: 1;
+    }
+}
+p.sleft{
+    animation-delay: 1s;
+}
+.directs.sleft
+{
+    animation-delay: 2s
+}
